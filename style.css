@@ -4,7 +4,7 @@
 }
 body{
     font-family: 'Merriweather', serif;
-    background-color: #f9fafc;
+    background-color: #ebf2ff;
 }
 
 .navbar{
@@ -21,7 +21,7 @@ body{
     width: 100%;
 }
 
-.nav__item {
+.button__primary {
     background-image: linear-gradient(
         to right,
         #ff512f 0%,
@@ -40,15 +40,126 @@ body{
     cursor: pointer;
 }
 
+.container {
+    padding: 20px;
+    background-color: rgb(225, 230, 255);
+}
+
+.hero__image__container {
+    width: 100%;
+}
+
+.hero__image {
+    width: 100%;
+    border-radius: 8px;
+    box-shadow: 0 25px 50px -12px rgb(0 0 0 / 25%);
+}
+
+.hero__description {
+    margin: 20px;
+}
+
+.hero__text {
+    font-weight: 800;
+    font-size: 32px;
+    color:#1d3557;
+    margin-bottom: 20px;
+}
+
+.list {
+    margin-top: 80px;
+}
+
+.list__menu__text {
+    text-align: center;
+    color:#1d3557;
+    font-size: 22px;
+    font-weight: 800;
+    margin-bottom: 20px;
+}
+
+.foodItem {
+    margin-top: 10px;
+}
+
+.foodItem__image {
+    width: 100%;
+}
+
+.foodItem__description{
+    font-size: 18px;
+}
+
 @media (min-width: 768px) {
     .navbar {
         justify-content: space-between;
         padding: 10px 30px;
     }
+
+    .hero__container {
+        display: flex;
+        align-items: center;
+        flex-direction: row-reverse;
+        margin: 0px auto;
+    }
+
+    .list__container {
+
+        display: flex;
+        justify-content: space-between;  
+        gap: 5px;      
+    }
+
+    .list__menu__text {
+        margin-bottom: 40px;
+    }
+
+    .foodItem {
+        margin: 0 10px;
+    }
+
+    #f1 {
+        margin-top: -20px;
+    }
+
+    .hero__description {
+        width: 100%;
+    }
+
+    .list {
+        position: relative;
+    }
+/* 
+    .bg {
+        background-image: linear-gradient(
+        to right,
+        #ff512f 0%,
+        #dd2476 51%,
+        #ff512f 100%
+    );
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        position: absolute;
+        z-index: -3; 
+        transform: skewY(-5deg);
+    } */
 }
 
 @media (min-width: 1024px) {
+    .container {
+        max-width: 70%;
+        margin: 0 auto;
+    }
     .navbar__brand{
         width: 100px;
     }
+
+    .list__container {
+
+        gap: 15px;      
+    }
+
+
 }
